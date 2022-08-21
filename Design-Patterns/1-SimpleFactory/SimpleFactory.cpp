@@ -32,6 +32,7 @@ int main(){
     //除零测试
     // cout << "1.5 / 0 = " << OperationFactory::createOperator('/', 1.5, 0)->getResult() << endl;
     // cout << "1.5 / 0.0 = " << OperationFactory::createOperator('/', 1.5, 0.0)->getResult() << endl;
+    // cout << "1.5 / 0.0f = " << OperationFactory::createOperator('/', 1.5, 0.0f)->getResult() << endl;
     cout << "==============Test Done===============" << endl;
     return 0;
 }
