@@ -8,9 +8,9 @@ class Connection;
 
 class State{
 public:
-    State(std::string name) : name(name){}
+    State(std::string name) : kName(name){}
     virtual ~State(){}
-    const std::string name;
+    const std::string kName;
     virtual void handle(Connection&) = 0;
     virtual bool changeState(Connection&, State*) = 0;
 };

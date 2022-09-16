@@ -5,10 +5,10 @@ void Listen::handle(Connection& connection){
 }
 
 bool Listen::changeState(Connection& connection, State* state){
-    if(state->name == "Established"){
+    if(state->kName == "Established"){
         connection.setState(new Established());
         return true;
-    }else if(state->name == "Closed"){
+    }else if(state->kName == "Closed"){
         connection.setState(new Closed());
         return true;
     }else{
@@ -23,7 +23,7 @@ void Established::handle(Connection& connection){
 }
 
 bool Established::changeState(Connection& connection, State* state){
-    if(state->name == "Closed"){
+    if(state->kName == "Closed"){
         connection.setState(new Closed());
         return true;
     }else{
@@ -38,7 +38,7 @@ void Closed::handle(Connection& connection){
 }
 
 bool Closed::changeState(Connection& connection, State* state){
-    if(state->name == "Listen"){
+    if(state->kName == "Listen"){
         connection.setState(new Listen());
         return true;
     }else{
