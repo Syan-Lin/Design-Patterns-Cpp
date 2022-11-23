@@ -21,8 +21,7 @@ C++11 实现设计模式
 - [享元模式](https://github.com/Syan-Lin/Design-Patterns-Cpp/tree/main/Design-Patterns/22-Flyweight)
 - [代理模式](https://github.com/Syan-Lin/Design-Patterns-Cpp/tree/main/Design-Patterns/4-Proxy)
 
-> 在系统中尽量使用关联关系来替代继承关系，因此大部分结构型模式都是对象结构型模式。
-> 继承是强耦合的，关联是弱耦合
+> 在系统中尽量使用关联关系来替代继承关系，因此大部分结构型模式都是对象结构型模式。继承是强耦合的，关联是弱耦合。
 
 ### 行为型模式
 行为型模式是对在不同的对象之间划分责任和算法的抽象化。
